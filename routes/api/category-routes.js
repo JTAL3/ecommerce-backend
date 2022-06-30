@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       attributes: ["product_name"],},
     ],
   })
-  // be sure to include its associated Products
+  // include its associated Products
   .then((categoryData) => res.json(categoryData))
   .catch((err) => {
     console.log(err);
